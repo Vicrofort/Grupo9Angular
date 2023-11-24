@@ -1,0 +1,98 @@
+$color-fondo: #909cba;
+$padding: 10px;
+$color-texto: #211a31;
+$font-family: 'Lobster', cursive;
+$box-shadow: 2px 2px 5px #9d8233;
+
+// Importar Bootstrap
+@import 'bootstrap';
+
+
+$border-color: #7f43aa;
+
+.portfolio-item img {
+    border: 2px solid $border-color;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #9d8233;
+}
+
+
+body {
+    background-color: $color-fondo;
+
+    p {
+        padding: $padding;
+        color: $color-texto;
+    }
+}
+
+.text-primary {
+    color: $color-texto !important;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 7.74rem;
+}
+
+.page-section-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 2.1rem;
+}
+
+#recent-title {
+    color: #211a31 !important;
+}
+
+//primero anidación //
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+
+    &:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+}
+
+//segunda anidación//
+.col-md-6.col-lg-3.mb-5 {
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+}
+
+
+//interpolacion
+
+
+
+$border-radius-Circular: 40%;
+$widthCircular: 14px;
+$heightCircular: 14px;
+$margin-topCir : 9px;
+$circular--square : "circular--square";
+$BorderColorCirc: rgb(0, 0, 0);
+$bordercirc : 1px solid;
+
+.#{$circular--square}-1 {
+
+    border-radius: $border-radius-Circular;
+    width: $widthCircular;
+    height: $heightCircular;
+
+}
+
+.#{$circular--square}-2 {
+
+    border-color: $BorderColorCirc;
+    border: $bordercirc;
+    border-radius: 10px;
+    margin-top: -5px;
+
+}
